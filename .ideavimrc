@@ -1,0 +1,5 @@
+nmap q :q<CR>
+nmap W :w<CR>
+nmap <C-h> :action PreviousTab
+nmap <C-l> :action NextTab
+nmap <C-o> :action OptimizeImports
