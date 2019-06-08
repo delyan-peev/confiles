@@ -1,0 +1,1 @@
+ialias gradlew="./gradlew"

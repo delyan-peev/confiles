@@ -1,0 +1,12 @@
+alias gst="git status"
+alias ga.="git add ."
+alias gbr="git branch"
+alias gcb="git checkout -b"
+alias gco="git checkout"
+alias gc-="git checkout --"
+alias gpo="git push origin"
+alias gpom="git pull origin master"
+alias gpoc="git push origin \$(git_current_branch)"
+alias gfo="git fetch origin"
+
+balias gcm="git commit -m \""
