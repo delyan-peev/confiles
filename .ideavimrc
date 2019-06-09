@@ -1,5 +1,10 @@
 nmap q :q<CR>
 nmap W :w<CR>
-nmap <C-h> :action PreviousTab
-nmap <C-l> :action NextTab
-nmap <C-o> :action OptimizeImports
+nmap <C-h> :action PreviousTab<CR>
+nmap <C-l> :action NextTab<CR>
+nmap <C-o> :action OptimizeImports<CR>
+
+nnoremap <C-j> :m +1<CR>
+nnoremap <C-k> :m -2<CR>
+inoremap <C-j> <Esc>:m +1<CR>gi
+inoremap <C-k> <Esc>:m -2<CR>gi

@@ -6,10 +6,10 @@ function addal() {
   fi
 
   arg=$1
-  ALIAS_NAME_VALUE=("${(@s/=/)arg}")
-  ALIAS_EXISTS=$(alias | grep "\b${ALIAS_NAME_VALUE[1]}=" | wc -l)
+  aliasMapping=("${(@s/=/)arg}")
+  aliasExists=$(alias | grep "\b${aliasMapping[1]}=" | wc -l)
 
-  if [ $ALIAS_EXISTS -ne 0 ]; then
+  if [ $aliasExists -ne 0 ]; then
     getopts ":f" opt
     if [ $opt -ne 'f' ]; then
       echo "Alias with that name already exists"
@@ -19,5 +19,5 @@ function addal() {
     echo "Adding alias forcefully to the custom config file ($ZSH_CUSTOM_CFG) due to -f flag. This will override the existing alias."
   fi
 
-  echo "alias ${ALIAS_NAME_VALUE[1]}=\"${ALIAS_NAME_VALUE[2]}\"" >> $ZSH_CUSTOM_CFG
+  echo "alias ${aliasMapping[1]}=\"${aliasMapping[2]}\"" >> $ZSH_CUSTOM_CFG
 }

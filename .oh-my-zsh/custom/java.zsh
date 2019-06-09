@@ -1,3 +1,4 @@
+# Java versions
 alias java12="export JAVA_HOME=`/usr/libexec/java_home -v 12`; java -version"
 #alias java11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 #alias java10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
